@@ -11,7 +11,7 @@
         /*#region common */
 
         * {
-            /* outline: red 1px solid; */
+            outline: red 1px solid;
         }
 
         .wrap{
@@ -25,6 +25,10 @@
 
         .clear{
             clear: both;
+        }
+
+        .com-img{
+            vertical-align: bottom;
         }
 
         .link{
@@ -41,6 +45,11 @@
 
         .col-ul li ~ li{
             margin-left: 30px;
+        }
+
+        /* 為了語意隱藏的元素 */
+        .hidden-title{
+            display: none;
         }
 
         /*#endregion common */
@@ -81,6 +90,13 @@
             background-color: orchid;
         }
 
+        .text-nav > h1 {
+            font-size: 0 !important;
+            border: red 1px solid;
+            margin: 3px;
+            /* display: none; */
+        }
+
         .icon-nav {
             float: right;
         }
@@ -92,10 +108,9 @@
 
         /*#endregion header*/
         
-        /*#region regionName */
+        /*#region main */
         
         .main {
-            /* background: red; */
         }
 
         .slidebox{
@@ -112,6 +127,14 @@
 
         .secbox > a {
             display: block;
+            position: relative;
+        }
+
+        .item-content {
+            position: absolute;
+            width: 90px;
+            top: 15px;
+            left: 15px;
         }
 
         .secbox a ~ a {
@@ -119,13 +142,66 @@
         }
 
         .secbox a > image {
-            vertical-align: middle;;
+            vertical-align: middle;
         }
 
         /*#endregion regionName*/
+    
+        /*#region company-desc */
+        
+        .list{
+            font-size: 0px;
+        }
+
+        .list > :first-child{
+            padding-left: 0px;
+            width: 285px;
+        }
+
+        .list > :last-child{
+            padding-right: 0px;
+            width: 285px;
+        }
+
+        .list a :hover {
+            color: orange;
+        }
+
+        .list-item {
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            font-size: 0px;
+            width: 270px;
+        }
+
+        .list-item div{
+            display: inline-block;
+        }
+
+        .list-item a {
+            display: block;
+        }
+
+        .list-item h2{
+            font-size: 16px;
+            margin-top: auto;
+        }
+
+        .list-item h3{
+            font-size: 10px;
+            color: gray;
+        }
+
+        .list-item-image{
+            margin-right: 15px;
+        }
+        /*#endregion company-desc*/
     </style>
 </head>
 <body>
+    <h1 class="hidden-title">float作業</h1>
     <div class="promotion">
         <div class="wrap">
             <a href="#" class="promotion-link-first-item link">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, rerum eaque?</a>
@@ -145,6 +221,7 @@
             <img src="http://placehold.it/199x63">
         </a>
         <nav class="text-nav">
+            <h1 class="hidden-title">Text Menu</h1>
             <ul class="col-ul">
                 <li><a href="#" class="link">Structural</a></li>
                 <li><a href="#" class="link">Refractory</a></li>
@@ -154,6 +231,7 @@
             </ul>
         </nav>
         <nav class="icon-nav">
+            <h1 class="hidden-title">Icon Menu</h1>
             <ul class="col-ul">
                 <li>
                     <a href="#"><i class="fas fa-search"></i></i></a>
@@ -174,22 +252,72 @@
     <!-- -------------------------------------------------------------------------------------------------------------------- -->
 
     <section class="wrap main">
+        <h1 class="hidden-title">Main</h1>
         <div class="slidebox">
             <a href="#">
-                <img src="http://placehold.it/862x560" style="vertical-align: middle;" alt="slide">
+                <img src="http://placehold.it/862x560" alt="slide" class="com-img" >
             </a>
         </div>
         <div class="secbox">
-            <a href="#" style="margin-bottom: 15px;">
-                <img src="http://placehold.it/306x265" style="vertical-align: middle;" alt="pd-image1">
+            <a href="#">
+                <img src="http://placehold.it/306x265" alt="pd-img1" class="com-img" >
+                <div class="item-content">
+                    <h2>Dinner Wear Items</h2>
+                    <h3>SHOP NOW</h3>
+                </div>
             </a>
             <a href="#">
-                <img src="http://placehold.it/306x265" style="vertical-align: middle;" alt="pd-image2">
+                <img src="http://placehold.it/306x265" alt="pd-img2" class="com-img" >
+                <div  class="item-content">
+                    <h2>New Serving Plate</h2>
+                    <h3>SHOP NOW</h3>
+                </div>
             </a>
         </div>
         <div class="clear"></div>
     </section>
 
     <!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+    <section class="wrap company-desc">
+        <ul class="list">
+            <a href="#">
+                <li class="list-item">
+                    <img src="http://placehold.it/35x35" alt="desc-img1" class="com-img list-item-image">
+                    <div>
+                        <h2>Free Shipping Worldwide</h2>
+                        <h3>Uk Orders Only</h3>
+                     </div>
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-item">
+                    <img src="http://placehold.it/35x35" alt="desc-img2" class="com-img list-item-image">
+                    <div>
+                        <h2>Free Shipping Worldwide</h2>
+                        <h3>Uk Orders Only</h3>
+                     </div>
+            </li>
+            </a>
+            <a href="#">
+                <li class="list-item">
+                    <img src="http://placehold.it/35x35" alt="desc-img3" class="com-img list-item-image">
+                    <div>
+                        <h2>Free Shipping Worldwide</h2>
+                        <h3>Uk Orders Only</h3>
+                     </div>
+            </li>
+        </a>
+        <a href="#">
+            <li class="list-item">
+                    <img src="http://placehold.it/35x35" alt="desc-img4" class="com-img list-item-image">
+                    <div>
+                        <h2>Free Shipping Worldwide</h2>
+                        <h3>Uk Orders Only</h3>
+                     </div>
+            </li>
+        </a>
+    </ul>
+    </section>
 </body>
 </html>

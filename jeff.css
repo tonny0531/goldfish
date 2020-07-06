@@ -4,6 +4,10 @@
     outline: red 1px solid;
 }
 
+a {
+    text-decoration: none;
+}
+
 .wrap{
     width: 1200px;
     margin-left: auto;
@@ -26,7 +30,7 @@
 }
 
 .link:hover{
-    color: salmon;
+    color: orange;
 }
 
 .col-ul li{
@@ -75,20 +79,28 @@
     float: left;
 }
 
+.logo-section{
+
+}
+
 .text-nav{
+    margin-left: 100px;
+    padding: 15px;
     float: left;
     background-color: orchid;
 }
 
 .text-nav > h1 {
-    font-size: 0 !important;
+    /* 參考天下雜誌 想問這兩個對語意會有不同的狀況嗎? */
+    /* font-size: 0 !important;
     border: red 1px solid;
-    margin: 3px;
-    /* display: none; */
+    margin: 3px; */
+    display: none;
 }
 
 .icon-nav {
     float: right;
+    padding: 15px;
 }
 
 .shopping-cart-count{
@@ -153,7 +165,7 @@
     width: 285px;
 }
 
-.list a :hover {
+.list a :hover h2 {
     color: orange;
 }
 
@@ -179,7 +191,7 @@
     margin-top: auto;
 }
 
-.list-item h3{
+.list-item p{
     font-size: 10px;
     color: gray;
 }
@@ -188,3 +200,119 @@
     margin-right: 15px;
 }
 /*#endregion company-desc*/
+
+/*#region Product List */
+
+.wrap-title{
+    float: left;
+}
+
+.tab{
+    font-size: 0;
+    float: right;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.tab-list{
+    display: inline-block;
+}
+
+.tab-list-item{
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tab-list-item a .active{
+    color: orange;
+}
+
+.arrow-group{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.arrow{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.arrow~.arrow{
+    border-left: 1px gray solid;
+    padding-right: 0px;
+}
+
+.product-list{
+    font-size: 0px;
+}
+
+.product-list li{
+    display: inline-block;
+}
+
+.product-list-item{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.product-list :first-child{
+    margin-left: 0px;
+}
+
+.product-list :last-child{
+    margin-right: 0px;
+}
+
+.product-info{
+    font-size: 14px;
+}
+
+.rate{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.rate-item{
+    display: inline-block;
+}
+
+.rate-active{
+    color: yellow;
+}
+
+.product-name{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.price-block{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.price{
+    font-size: 16px;
+    font-weight: 900;
+    margin-right: 2px;
+}
+
+.price::before{
+    content: '$';
+}
+
+.discount{
+    color: red;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.origin-price{
+    text-decoration: line-through;
+    margin-left: 2px;
+}
+
+
+/*#endregion Product List */

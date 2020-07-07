@@ -90,14 +90,6 @@ a {
     background-color: orchid;
 }
 
-.text-nav > h1 {
-    /* 參考天下雜誌 想問這兩個對語意會有不同的狀況嗎? */
-    /* font-size: 0 !important;
-    border: red 1px solid;
-    margin: 3px; */
-    display: none;
-}
-
 .icon-nav {
     float: right;
     padding: 15px;
@@ -248,8 +240,16 @@ a {
     font-size: 0px;
 }
 
-.product-list li{
+.product-list li,a{
     display: inline-block;
+}
+
+.product-list .product-list-item:first-child{
+    margin-left: 0px;
+}
+
+.product-list .product-list-item:last-child{
+    margin-right: 0px;
 }
 
 .product-list-item{
@@ -257,13 +257,17 @@ a {
     margin-right: 15px;
 }
 
-.product-list :first-child{
-    margin-left: 0px;
+.product-list-item a{
+    position: relative;
 }
 
-.product-list :last-child{
-    margin-right: 0px;
+.product-list-item-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
 }
+
 
 .product-info{
     font-size: 14px;

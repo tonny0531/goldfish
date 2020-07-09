@@ -396,3 +396,19 @@ a {
 }
 
 /*#endregion LargeProduct List*/
+
+/*#region third-products */
+
+.third-block-list{
+    font-size: 0;
+}
+
+.third-block-list-item{
+    float: left;
+}
+
+.third-block-list-item ~ .third-block-list-item{
+    margin-left: 30px;
+}
+
+/*#endregion third-products*/

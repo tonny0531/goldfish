@@ -491,46 +491,98 @@
     <div class="full">
         <section class="wrap">
             <h1 class="hidden-title">Footer</h1>
-                <!-- 這裡有BS的味道 我還想不到如何改命名 -->
-                <a href="#" class="arrow-left">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-                <a href="#" class="arrow-right">
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <ul class="img-list">
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                    <li class="img-list-item">
-                        <a href="#">
-                            <img src="http://placehold.it/120x87" alt="" class="com-img">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <!-- 在想有甚麼辦法不用Flex 可以動態改順序的方法? -->
+                <div class="footer-block">
+                    <h2>Store Information</h2>
+                    <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/address -->
+                    <address>
+                        <div class="contact addr">
+                            <img src="http://placehold.it/15x15" alt="addr-icon" class="com-img">
+                            <span>Demo Store</span>
+                            <span>42 Puffin Street 12345 Puffinville France</span>
+                            <span>United States</span>
+                        </div>
+                        <div class="contact addr-phone">
+                            <img src="http://placehold.it/15x15" alt="addr-icon" class="com-img">
+                            <span>Call Us: 0123-456-789</span>
+                        </div>
+                        <div class="contact addr-mail">
+                            <img src="http://placehold.it/15x15" alt="addr-icon" class="com-img">
+                            <span>
+                                Email Us:
+                                <a href="mailto:Sales@Yourcompany.Com" class="link">Sales@Yourcompany.Com</a>
+                            </span>
+                        </div>
+                    </address>
+                </div>
+                <div class="footer-block">
+                    <h2>Products</h2>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h2>Our Company</h2>
+                    <ul class="footer-link-list">
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                        <li class="footer-link-list-item">
+                            <a href="#" class="link">Lorem, ipsum.</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h2>
+                        What Client Say 
+                        <div class="arrow-group footer-arrow-group">
+                            <a href="#" class="arrow">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                            <a href="#" class="arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </h2>
+                    <!-- Flex吸毒太深 不想寫死高度 -->
+                    <ul class="client-response-list">
+                        <li class="client-response-list-item">
+                            <div class="client-response-img-block">
+                                <img src="http://placehold.it/46x38" alt="" class="com-img">
+                            </div>
+                            <div class="client-response-content-block">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fuga.</p>
+                            </div>
+                        </li>
+                        <li class="client-response-list-item">
+                            <img src="http://placehold.it/46x38" alt="" class="com-img">
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
         </section>
     </div>
 </body>

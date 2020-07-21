@@ -397,6 +397,7 @@ a {
 
 /*#endregion LargeProduct List*/
 
+<<<<<<< HEAD
 /*#region third-list */
 
 .third-list-item{
@@ -450,3 +451,20 @@ a {
 
 /*#endregion footer */
 
+=======
+/*#region third-products */
+
+.third-block-list{
+    font-size: 0;
+}
+
+.third-block-list-item{
+    float: left;
+}
+
+.third-block-list-item ~ .third-block-list-item{
+    margin-left: 30px;
+}
+
+/*#endregion third-products*/
+>>>>>>> 7f2723956fc7c096b799ccdc3e0245b6c4f48d02

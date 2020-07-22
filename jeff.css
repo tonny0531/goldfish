@@ -1,7 +1,7 @@
 /*#region common */
 
 * {
-    outline: red 1px solid;
+    /* outline: red 1px solid; */
 }
 
 a {
@@ -517,7 +517,86 @@ address span ~ span {
 .client-response-content-block{
     display: inline-block;
     width: 223px;
-
 }
 /*#endregion footer */
 
+/*#region mail-group */
+
+.mail-group{
+    line-height: 50px;
+    font-size: 0;
+}
+
+.mail-item-block{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mail-item-content{
+    margin-left: 30px;
+}
+
+.mail-item-content span{
+    font-size: 12px;
+}
+
+.mail-title{
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.btn-submit{
+    cursor: pointer;
+}
+
+.input-item{
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.mail-item-input{
+    background-color: #f2f2f2;
+}
+/*#endregion mail-group */
+
+
+/*#region copyright? */
+
+.copyright{
+    text-align: center;
+}
+
+.copyright-group{
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.icon-group{
+    font-size: 0;
+}
+
+.icon-group a+a{
+    padding-left: 15px;
+}
+
+.copyright-link-list{
+    font-size: 0;
+}
+
+.copyright-link-list-item{
+    display: inline-block;
+}
+
+.copyright-link-list-item span{
+    font-size: 14px;
+}
+
+.link-padding{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+/*#endregion copyright? */
